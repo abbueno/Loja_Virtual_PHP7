@@ -3,8 +3,28 @@
 class Rotas {
 
     public static $pag;
+    private static $pasta_controller = 'controller';
+    private static $pasta_view = 'view';
 
-    static function get_pagina(){
+
+
+    static function get_SiteHOME(){
+        return Config::SITE_URL . '/' .Config::SITE_PASTA;
+    }
+
+    static function get_SiteRAIZ(){
+        return $_SERVER['DOCUMENT_ROOT'] . '/' .Config::SITE_PASTA;
+    }
+
+    static function get_SiteTEMA(){
+        return self::getSiteHOME(). '/' .self::$pasta_view;
+    }
+
+    static function pag_Carrinho(){
+        return self::getSiteHOME(). '/carrinho';
+    }
+
+    static function get_Pagina(){
         if(isset($_GET['pag'])){
 
             $pagina = $_GET['pag'];
