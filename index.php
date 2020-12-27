@@ -3,11 +3,11 @@
 require './lib/autoload.php';
 
 
-$smarty = new Smarty();
+$smarty = new Template();
 
-$smarty->setTemplateDir('view/')
-$smarty->setCompileDir('view/compile/');
-$smarty->setCacheDir('view/cache/');
+
+//valores para o template
+$smarty->assign('NOME', 'ALLAN');
+
 $smarty->display('index.tpl');
-
 ?>
