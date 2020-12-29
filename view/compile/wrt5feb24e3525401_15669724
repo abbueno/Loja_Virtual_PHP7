@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-12-29 16:35:01
+/* Smarty version 3.1.36, created on 2020-12-29 13:45:23
   from 'C:\xampp\htdocs\Meus_projetos\Loja_Virtual_PHP7\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5feb4ca5733671_12297380',
+  'unifunc' => 'content_5feb24e347b0b6_91973993',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '724178099830e3e7b2891e6b93fa1dd68976e848' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Meus_projetos\\Loja_Virtual_PHP7\\view\\index.tpl',
-      1 => 1609256097,
+      1 => 1609245824,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5feb4ca5733671_12297380 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5feb24e347b0b6_91973993 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
 
@@ -34,12 +34,10 @@ function content_5feb4ca5733671_12297380 (Smarty_Internal_Template $_smarty_tpl)
   <title>Shop Homepage - Start Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/css/shop-homepage.css" rel="stylesheet">
+  <link href="css/shop-homepage.css" rel="stylesheet">
 
 </head>
 
@@ -72,7 +70,7 @@ function content_5feb4ca5733671_12297380 (Smarty_Internal_Template $_smarty_tpl)
       </div>
     </div>
   </nav>
-          
+
   <!-- Page Content -->
   <div class="container">
 
@@ -89,13 +87,6 @@ function content_5feb4ca5733671_12297380 (Smarty_Internal_Template $_smarty_tpl)
 
       </div>
       <!-- /.col-lg-3 -->
-      <?php 
-
-        Rotas::get_Pagina();
-        //var_dump(Rotas::$pag);
-
-        ?>
-
 
       <div class="col-lg-9">
 
@@ -246,12 +237,10 @@ function content_5feb4ca5733671_12297380 (Smarty_Internal_Template $_smarty_tpl)
 
   <!-- Bootstrap core JavaScript -->
   <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/vendor/jquery/jquery.min.js"><?php echo '</script'; ?>
+ src="vendor/jquery/jquery.min.js"><?php echo '</script'; ?>
 >
   <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/vendor/bootstrap/js/bootstrap.bundle.min.js"><?php echo '</script'; ?>
+ src="vendor/bootstrap/js/bootstrap.bundle.min.js"><?php echo '</script'; ?>
 >
 
 </body>

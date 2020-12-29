@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-12-29 16:35:01
+/* Smarty version 3.1.36, created on 2020-12-29 15:27:39
   from 'C:\xampp\htdocs\Meus_projetos\Loja_Virtual_PHP7\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5feb4ca5733671_12297380',
+  'unifunc' => 'content_5feb3cdb562ed5_87353147',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '724178099830e3e7b2891e6b93fa1dd68976e848' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Meus_projetos\\Loja_Virtual_PHP7\\view\\index.tpl',
-      1 => 1609256097,
+      1 => 1609251937,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5feb4ca5733671_12297380 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5feb3cdb562ed5_87353147 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 
@@ -72,7 +72,7 @@ function content_5feb4ca5733671_12297380 (Smarty_Internal_Template $_smarty_tpl)
       </div>
     </div>
   </nav>
-          
+
   <!-- Page Content -->
   <div class="container">
 
@@ -89,13 +89,6 @@ function content_5feb4ca5733671_12297380 (Smarty_Internal_Template $_smarty_tpl)
 
       </div>
       <!-- /.col-lg-3 -->
-      <?php 
-
-        Rotas::get_Pagina();
-        //var_dump(Rotas::$pag);
-
-        ?>
-
 
       <div class="col-lg-9">
 

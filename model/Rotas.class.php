@@ -17,11 +17,11 @@ class Rotas {
     }
 
     static function get_SiteTEMA(){
-        return self::getSiteHOME(). '/' .self::$pasta_view;
+        return self::get_SiteHOME(). '/' .self::$pasta_view;
     }
 
     static function pag_Carrinho(){
-        return self::getSiteHOME(). '/carrinho';
+        return self::get_SiteHOME(). '/carrinho';
     }
 
     static function get_Pagina(){

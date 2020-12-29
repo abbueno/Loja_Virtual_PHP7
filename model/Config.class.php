@@ -4,7 +4,7 @@ Class Config {
 
     // Informações básicas do site
     const SITE_URL = "http://localhost";
-    const SITE_PASTA = "loja";
+    const SITE_PASTA = "Meus_projetos/Loja_Virtual_PHP7";
     const SITE_NOME = "Loja Virtual";
     const SITE_EMAIL_ADM = "allanbighibueno@gmail.com";
 
