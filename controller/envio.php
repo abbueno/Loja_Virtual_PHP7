@@ -3,10 +3,10 @@
 //$to      = Config::EMAIL_USER;
 $to      = 'allanbighibueno@gmail.com';
 $subject = 'Contato - Loja Virtual';
-$message = $_GET['txtinputarea'];
-$headers = 'From: ' . $_GET['txtinputemail'] .' ' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+$message = 'Email de'.$_GET['txtinputnome']. "\r\n" .$_GET['txtinputarea'];
+$dest = $_GET['txtinputemail'];
+
+$headers = "From: " .$dest;
 
 mail($to, $subject, $message, $headers);
 ?>
