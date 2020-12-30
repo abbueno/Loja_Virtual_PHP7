@@ -1,9 +1,27 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<?php
+/* Smarty version 3.1.36, created on 2020-12-30 18:55:15
+  from 'C:\xampp\htdocs\Meus_projetos\Loja_Virtual_PHP7\view\contato.tpl' */
 
-<div class="container">
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.36',
+  'unifunc' => 'content_5fecbf03e549f8_99167426',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '18a453751c309748eb717bf98250e0b1ed30002c' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Meus_projetos\\Loja_Virtual_PHP7\\view\\contato.tpl',
+      1 => 1609350910,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5fecbf03e549f8_99167426 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="container">
     <div class="row">
         
         <form class="form-horizontal" id="frmcontatoazul">
@@ -59,4 +77,5 @@
         </form>
         
 	</div>
-</div>
+</div><?php }
+}

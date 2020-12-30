@@ -1,18 +1,45 @@
-$(document).ready(function(){ 
-    $('#characterLeft').text('140 characters left');
-    $('#message').keydown(function () {
-        var max = 140;
-        var len = $(this).val().length;
-        if (len >= max) {
-            $('#characterLeft').text('You have reached the limit');
-            $('#characterLeft').addClass('red');
-            $('#btnSubmit').addClass('disabled');            
-        } 
-        else {
-            var ch = max - len;
-            $('#characterLeft').text(ch + ' characters left');
-            $('#btnSubmit').removeClass('disabled');
-            $('#characterLeft').removeClass('red');            
-        }
-    });    
-});
+$(document).ready
+(
+    function()
+    {  
+        $('#btnenviar').click
+        (
+            function(e)
+            {   
+                $inNome     =$('#txtinputnome');
+                $inEmail    =$('#txtinputemail');
+                $inAssunto  =$('#txtinputassunto');
+                $inArea     =$('#txtinputarea');
+                $btnEnviar  =$('#btnenviar');
+                
+                var emailformat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                var latinformat=/[^a-zA-Z\-\'\ ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏàáâãäåæçèéêëìíîïÐÑÒÓÔÕÖØÙÚÛÜÝÞßðñòóôõöøùúûüýþÿ]/i;
+                
+                if($inNome.val().length<=2 || latinformat.test($inNome.val()))
+                {
+                    e.preventDefault();
+                    $('#txtinputnome + span').toggle().html("Informe um nome válido !");
+                    $inNome.focus();                 
+                }
+                else if(!emailformat.test($inEmail.val()))
+                {
+                    e.preventDefault();
+                    $('#txtinputemail + span').toggle().html("Informe um e-mail válido !");
+                    $inEmail.focus();                 
+                }
+                else if($inAssunto.val().length<=2 || !latinformat.test($inAssunto.val()))
+                {
+                    e.preventDefault();
+                    $('#txtinputassunto + span').toggle().html("Informe um assunto válido !");
+                    $inAssunto.focus();                 
+                }
+                else if($inArea.val().length<=2 || !latinformat.test($inArea.val()))
+                {
+                    e.preventDefault();
+                    $('#txtinputarea + span').toggle().html("Informe uma mensagem válida !");
+                    $inArea.focus();                 
+                }
+            }            
+        )
+    }
+);

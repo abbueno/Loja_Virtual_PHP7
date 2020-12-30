@@ -1,11 +1,37 @@
-
-.red{
-    color:red;
-    }
-.form-area
+#frmcontatoazul
 {
-    background-color: #FAFAFA;
-	padding: 10px 40px 60px;
-	margin: 10px 0px 60px;
-	border: 1px solid GREY;
-	}
+    padding:18px;
+    width:680px
+}
+
+#frmcontatoazul fieldset
+{
+    border:1px double #20a;    
+    padding:10px;
+    border-radius:4px
+}
+
+#frmcontatoazul fieldset .form-group
+{
+    color:#30a
+}
+
+#frmcontatoazul fieldset legend
+{
+    background-color:#20a;
+    color:#ffe;
+    padding:10px;    
+    margin:4px;
+    margin-bottom:20px;
+    border-radius:8px
+}
+
+#frmcontatoazul #singlebutton
+{
+    margin-top:20pt
+}
+
+#frmcontatoazul .help-block
+{
+    display:none
+}

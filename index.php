@@ -17,8 +17,6 @@ $smarty->assign('TITULO_SITE', Config::SITE_NOME);
 
 
 
-$dados = new Conexao();
-var_dump($dados);
 
 $smarty->display('index.tpl');
 ?>
