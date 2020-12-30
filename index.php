@@ -13,7 +13,12 @@ $smarty->assign('GET_HOME', Rotas::get_SiteHOME());
 $smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
 $smarty->assign('PAG_CONTATO', Rotas::pag_Contato());
 $smarty->assign('PAG_MINHACONTA', Rotas::pag_MinhaConta());
+$smarty->assign('TITULO_SITE', Config::SITE_NOME);
 
+
+
+$dados = new Conexao();
+var_dump($dados);
 
 $smarty->display('index.tpl');
 ?>

@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Conexao' => $baseDir . '/model/Conexao.class.php',
     'Config' => $baseDir . '/model/Config.class.php',
     'Rotas' => $baseDir . '/model/Rotas.class.php',
     'Smarty' => $vendorDir . '/smarty/smarty/libs/Smarty.class.php',

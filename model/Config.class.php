@@ -5,7 +5,7 @@ Class Config {
     // Informações básicas do site
     const SITE_URL = "http://localhost";
     const SITE_PASTA = "Meus_projetos/Loja_Virtual_PHP7";
-    const SITE_NOME = "Loja Virtual";
+    const SITE_NOME = "Loja Virtual PHP7 e Mysqli";
     const SITE_EMAIL_ADM = "allanbighibueno@gmail.com";
 
 
@@ -14,6 +14,7 @@ Class Config {
     const BD_USER = "root";
     const BD_SENHA = "";
     const BD_BANCO = "lojavirtual";
+    const BD_PREFIX = "";
     
     
     // Informações para PHP MAILLER

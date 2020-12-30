@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.36, created on 2020-12-30 11:53:42
+  from 'C:\xampp\htdocs\Meus_projetos\Loja_Virtual_PHP7\view\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.36',
+  'unifunc' => 'content_5fec5c36866fd0_18682950',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '724178099830e3e7b2891e6b93fa1dd68976e848' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Meus_projetos\\Loja_Virtual_PHP7\\view\\index.tpl',
+      1 => 1609325613,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5fec5c36866fd0_18682950 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -8,14 +31,18 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>{$TITULO_SITE}</title>
+  <title><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="{$GET_TEMA}/tema/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="{$GET_TEMA}/tema/css/shop-homepage.css" rel="stylesheet">
-  <link href="{$GET_TEMA}/tema/contatos/contatos.css" rel="stylesheet">
+  <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/css/shop-homepage.css" rel="stylesheet">
+  <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/contatos/contatos.css" rel="stylesheet">
 
 </head>
 
@@ -31,18 +58,22 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{$GET_HOME}">Home
+            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{$PAG_MINHACONTA}">Minha Conta</a>
+            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
+">Minha Conta</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{$PAG_CARRINHO}">Carrinho</a>
+            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
+">Carrinho</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{$PAG_CONTATO}">Contato</a>
+            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
+">Contato</a>
           </li>
         </ul>
       </div>
@@ -65,12 +96,12 @@
 
       </div>
       <!-- /.col-lg-3 -->
-      {php}
+      <?php 
 
         Rotas::get_Pagina();
         //var_dump(Rotas::$pag);
 
-        {/php}
+        ?>
 
 
       <div class="col-lg-9">
@@ -215,16 +246,27 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">{$TITULO_SITE}<br>Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
     </div>
     <!-- /.container -->
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="{$GET_TEMA}/tema/vendor/jquery/jquery.min.js"></script>
-  <script src="{$GET_TEMA}/tema/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="{$GET_TEMA}/tema/contatos/contatos.js"></script>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/vendor/jquery/jquery.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/vendor/bootstrap/js/bootstrap.bundle.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/tema/contatos/contatos.js"><?php echo '</script'; ?>
+>
 
 </body>
 
 </html>
+<?php }
+}

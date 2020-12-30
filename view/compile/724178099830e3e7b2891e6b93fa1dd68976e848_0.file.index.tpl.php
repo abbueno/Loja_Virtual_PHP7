@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-12-30 11:42:57
+/* Smarty version 3.1.36, created on 2020-12-30 13:16:31
   from 'C:\xampp\htdocs\Meus_projetos\Loja_Virtual_PHP7\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fec59b119a7e6_21222558',
+  'unifunc' => 'content_5fec6f9f0d8a03_96887698',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '724178099830e3e7b2891e6b93fa1dd68976e848' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Meus_projetos\\Loja_Virtual_PHP7\\view\\index.tpl',
-      1 => 1609286340,
+      1 => 1609330587,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fec59b119a7e6_21222558 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fec6f9f0d8a03_96887698 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 
@@ -31,7 +31,8 @@ function content_5fec59b119a7e6_21222558 (Smarty_Internal_Template $_smarty_tpl)
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Shop Homepage - Start Bootstrap Template</title>
+  <title><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</title>
 
   <!-- Bootstrap core CSS -->
   <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
@@ -245,7 +246,8 @@ function content_5fec59b119a7e6_21222558 (Smarty_Internal_Template $_smarty_tpl)
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white"><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+<br>Copyright &copy; Your Website 2020</p>
     </div>
     <!-- /.container -->
   </footer>
