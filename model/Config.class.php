@@ -20,6 +20,7 @@ Class Config {
     // Informações para PHP MAILLER
     const EMAIL_HOST = "smtp.gmail.com";
     const EMAIL_USER = "allanbighibueno@gmail.com";
+    const EMAIL_NOME = "Contato Loja";
     const EMAIL_SENHA = "allanbighibueno@gmail.com";
     const EMAIL_PORTA = 587;
     const EMAIL_SMTPAUTH = true;

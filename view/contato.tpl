@@ -1,12 +1,8 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
 <div class="container">
     <div class="row">
         
-        <form class="form-horizontal" id="frmcontatoazul">
+        <form class="form-horizontal" id="frmcontatoazul" action="envio">
         <fieldset>
         
         <!-- Form Name -->
@@ -31,13 +27,7 @@
         </div>
         
         <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="txtinputassunto">Assunto</label>  
-          <div class="col-md-8">
-          <input id="txtinputassunto" name="txtinputassunto" placeholder="Informe do que se trata" class="form-control input-md" required="required" type="text" />
-          <span class="help-block">help</span>  
-          </div>
-        </div>
+        
         
         <!-- Textarea -->
         <div class="form-group">

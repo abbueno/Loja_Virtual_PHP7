@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-12-30 19:13:43
+/* Smarty version 3.1.36, created on 2020-12-30 22:36:50
   from 'C:\xampp\htdocs\Meus_projetos\Loja_Virtual_PHP7\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fecc3578d5c39_93810826',
+  'unifunc' => 'content_5fecf2f2592db5_69090982',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '18a453751c309748eb717bf98250e0b1ed30002c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Meus_projetos\\Loja_Virtual_PHP7\\view\\contato.tpl',
-      1 => 1609352018,
+      1 => 1609364194,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fecc3578d5c39_93810826 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="container">
+function content_5fecf2f2592db5_69090982 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<div class="container">
     <div class="row">
         
-        <form class="form-horizontal" id="frmcontatoazul">
+        <form class="form-horizontal" id="frmcontatoazul" action="envio">
         <fieldset>
         
         <!-- Form Name -->
@@ -49,13 +50,7 @@ function content_5fecc3578d5c39_93810826 (Smarty_Internal_Template $_smarty_tpl)
         </div>
         
         <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="txtinputassunto">Assunto</label>  
-          <div class="col-md-8">
-          <input id="txtinputassunto" name="txtinputassunto" placeholder="Informe do que se trata" class="form-control input-md" required="required" type="text" />
-          <span class="help-block">help</span>  
-          </div>
-        </div>
+        
         
         <!-- Textarea -->
         <div class="form-group">
