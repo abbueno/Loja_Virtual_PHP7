@@ -27,7 +27,7 @@
                     <a hrer="">
 
 
-                        <img src="" alt="">
+                        <img src="media/images/{$P.pro_img}" alt="">
 
                         <div class="caption">
                             
