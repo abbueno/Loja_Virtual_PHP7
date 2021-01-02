@@ -9,7 +9,21 @@ Class Produtos extends Conexao{
         //query para buscar os produtos de uma categoria especifica.
         $query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
 
-        //$query .= "ORDER BY pro_id DESC";
+        $query .= " ORDER BY pro_id DESC";
+
+        $this->ExecuteSQL($query);
+
+        $this->GetLista();
+    }
+
+
+
+
+    function GetProdutosID($id){
+        //query para buscar os produtos de uma categoria especifica.
+        $query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
+
+        $query .= " AND pro_id = {$id}";
 
         $this->ExecuteSQL($query);
 

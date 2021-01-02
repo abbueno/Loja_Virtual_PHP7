@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2021-01-02 14:45:36
+/* Smarty version 3.1.36, created on 2021-01-02 17:24:10
   from 'C:\xampp\htdocs\Meus_projetos\Loja_Virtual_PHP7\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5ff0790019fd19_22969475',
+  'unifunc' => 'content_5ff09e2a77e395_73934132',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a204be080718e7e069b068faae2c58831fd6ba2f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Meus_projetos\\Loja_Virtual_PHP7\\view\\produtos.tpl',
-      1 => 1609594056,
+      1 => 1609603909,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ff0790019fd19_22969475 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ff09e2a77e395_73934132 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3>Página de produtos</h3>
 
 <hr>
@@ -52,11 +52,14 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 
                 <div class="thumbnail">
 
-                    <a hrer="">
+                    <a hrer="<?php echo $_smarty_tpl->tpl_vars['PRO_INFO']->value;?>
+/<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_id'];?>
+/<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_slug'];?>
+">
 
 
                         <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
-" alt="">
+" width="200" height="200" alt="">
 
                         <div class="caption">
                             

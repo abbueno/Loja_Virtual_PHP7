@@ -24,10 +24,10 @@
 
                 <div class="thumbnail">
 
-                    <a hrer="">
+                    <a hrer="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}">
 
 
-                        <img src="{$P.pro_img}" alt="">
+                        <img src="{$P.pro_img}" width="200" height="200" alt="">
 
                         <div class="caption">
                             
