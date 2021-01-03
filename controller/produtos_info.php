@@ -7,6 +7,7 @@ $produtos = new Produtos();
 $produtos->GetProdutosID(Rotas::$pag[1]);
 
 $smarty->assign('PRO',$produtos->GetItens());
+$smarty->assign('TEMA',Rotas::getSiteTEMA());
 
 $smarty->display('produtos_info.tpl');
 

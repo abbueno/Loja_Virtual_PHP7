@@ -1,13 +1,13 @@
 {foreach from=$PRO item=P}
 
-    <h3> class="text-center">{$P.pro_nome} - Ref: {$P.pro.ref}</h3>
-    <h3>
+    <h3> class="text-center">{$P.pro_nome} - Ref: {$P.pro_ref}</h3>
+    
 <hr>
 
 <div class="row">
 
     {* div da esquerda imagem do produto  *}
-    <div class="col-md-6">
+    <div class="col-md-6 ">
 
         <img class="thumbnail" src="{$P.pro_img_g}" alt="" >
     
@@ -15,18 +15,20 @@
 
 
 {*   dive da direita info produtos    *}
-    <div class="col-md-6" thumbnail">
+    <div class="col-md-6 thumbnail">
 
         <img src="{$TEMA}/images/logo-pagseguro.png" alt="">
 <hr>
 
+    <div class="col-md-6">
+        <h3 class="text-center preco">R$ {$P.pro_valor}</h3>
     </div>
 
     <div class="col-md-6">
         <form name="carrinho" method="post" action="">
             <input type="hidden" name="pro_id" value="{$P.pro_id}">
             <input type="hidden" name="acao" value="add">
-        <button class="btn btn-geral btn-lg">Comprar</button>
+        <button class="btn btn-success btn-lg">Comprar</button>
             </form>
         </div>
     </div>
@@ -43,8 +45,8 @@
 
                 <li class="col-md-3 ">
                     <img src="" alt="" class="thumbnail">
-
                 </li>
+
             </ul>
         
         </div>
