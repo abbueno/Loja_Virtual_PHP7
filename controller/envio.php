@@ -1,7 +1,7 @@
 <?php
 
 //$to      = Config::EMAIL_USER;
-$to      = 'allanbighibueno@gmail.com';
+$to      = 'meucontato@gmail.com';
 $subject = 'Contato - Loja Virtual';
 $message = 'Email de'.$_GET['txtinputnome']. "\r\n" .$_GET['txtinputarea'];
 $dest = $_GET['txtinputemail'];
